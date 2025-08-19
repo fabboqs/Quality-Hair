@@ -1,0 +1,6 @@
+@media (max-width: 480px) {
+  .faq-question { font-size: 1rem; padding: 12px; }
+  .faq-answer { font-size: 0.95rem; }
+}
+
+

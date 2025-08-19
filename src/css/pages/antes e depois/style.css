@@ -1,0 +1,121 @@
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+      padding-top: 120px;
+    }
+    a { text-decoration: none; }
+
+
+.intro-antes-depois {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #9b9e84;
+  height: 60vh;
+}
+
+.intro-antes-depois .capa {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+
+}
+
+.intro-texto {
+  margin-top: 20px;
+}
+
+.intro-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f0ede4;
+}
+
+.intro-texto p {
+  font-size: 1.1rem;
+  color: #f0ede4;
+}
+
+body {
+  margin: 0;
+  background-color: #f0ede4;
+  color: #222;
+}
+
+.antes-depois {
+  padding: 20px;
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.02);
+} 
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.02);
+}
+
+/* Estilo do Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#lightbox .fechar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+

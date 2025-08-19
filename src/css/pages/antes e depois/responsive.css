@@ -1,0 +1,6 @@
+/* Mobile: largura máxima de 768px */
+@media (max-width: 768px) {
+  .intro-antes-depois .capa {
+    max-width: 70%; /* valor para mobile */
+  }
+}

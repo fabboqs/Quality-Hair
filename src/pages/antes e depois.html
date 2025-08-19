@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Antes e Depois - Quality Hair</title>
+    <meta name="description" content="Antes e depois transplante capilar, resultados reais - Quality hair" />
+    <!-- Adicionando favicon -->
+    <link rel="shortcut icon" href="../imgs/Quality Hair - pistache.png" type="image/x-icon" />
+    <!-- Linkando Css -->
+    <link rel="stylesheet" href="../css/base/font.css" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages/antes e depois/style.css" />
+    <link rel="stylesheet" href="../css/pages/antes e depois/responsive.css" />
+    <!-- Linkando icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Adicionando Javascript -->
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+      <a class="logo" href="../index.html">
+        <img src="../imgs/Quality Hair - fundo escuro.jpg" alt="Logo escrita quality hair" />
+      </a>
+      <button class="menu-hamburguer" aria-label="Abrir menu">
+      <span></span>
+      </button>
+
+      <nav class="menu">
+        <ul class="itens">
+          <li class="item"><a href="../index.html"> HOME </a></li>
+          <li class="item"><a href="../pages/passo a passo.html"> PASSO A PASSO </a></li>
+          <li class="item ativo"><a href="../pages/antes e depois.html"> ANTES E DEPOIS </a></li>
+          <li class="item"><a href="../pages/sobre nos.html"> SOBRE NÓS </a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+<section class="intro-antes-depois">
+  <img src="../imgs/Quality Hair - off white.png" alt="Antes e Depois Capa" class="capa">
+  <div class="intro-texto">
+    <h1>Antes e Depois</h1>
+    <p>Confira nossos resultados reais de transplante capilar</p>
+  </div>
+</section>    
+<section class="antes-depois">
+  <div class="galeria">
+    <img src="../imgs/page_2.jpg" alt="Antes e Depois 2" onclick="abrirImagem(this.src)">
+    <img src="../imgs/page_3.jpg" alt="Antes e Depois 3" onclick="abrirImagem(this.src)">
+    <img src="../imgs/page_4.jpg" alt="Antes e Depois 4" onclick="abrirImagem(this.src)">
+    <img src="../imgs/page_5.jpg" alt="Antes e Depois 5" onclick="abrirImagem(this.src)">
+    <img src="../imgs/page_6.jpg" alt="Antes e Depois 6" onclick="abrirImagem(this.src)">
+    <img src="../imgs/page_7.jpg" alt="Antes e Depois 7" onclick="abrirImagem(this.src)">
+    <img src="../imgs/page_8.jpg" alt="Antes e Depois 8" onclick="abrirImagem(this.src)">
+  </div>
+</section>
+<!-- Lightbox -->
+<div id="lightbox" onclick="fecharImagem()">
+  <span class="fechar">&times;</span>
+  <img id="imagem-lightbox" src="" alt="Visualização">
+</div>
+
+    <!-- Rodapé -->
+<footer id="rodape">
+  <!-- Ícones totalmente à esquerda -->
+  <div class="footer-left">
+    <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+    </a>
+    <a href="https://www.instagram.com/seuusuario" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i><span>Instagram</span>
+    </a>
+  </div>
+
+  <!-- Endereço totalmente à direita -->
+  <div class="footer-right">
+    🧾 CNPJ: 12.345.678/0001-90<br>
+    📍 Rua Estela, 515 – Conj. 101 – Bloco G – Vila Mariana – São Paulo/SP – CEP: 04011-002
+  </div>
+</footer>
+<!-- Fim do rodapé -->
+
+
+  </body>
+</html>

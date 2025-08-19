@@ -1,0 +1,106 @@
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+      padding-top: 120px;
+    }
+    a { text-decoration: none; }
+
+.sobre-nos {
+  padding: 40px 20px;
+  background: #f0ede4;
+  text-align: center;
+  padding-top: 121px;
+}
+
+.sobre-nos h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #9b9e84;
+}
+
+.sobre-nos p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.galeria-equipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.galeria-equipe img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tela5 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ede4;
+  height: 60vh;
+}
+
+.tela5 .container {
+
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.tela5 h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #9b9e84;
+}
+
+.tela5 p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #9b9e84;
+}
+
+.botoes-mapa {
+  margin-top: 20px;
+}
+
+.botoes-mapa .botao {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #9b9e84;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.botoes-mapa .botao:hover {
+  background-color: #868970;
+}
+
+@media (max-width: 768px) {
+  .tela5 h1 {
+    font-size: 1.6rem;
+  }
+  .botoes-mapa .botao {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}

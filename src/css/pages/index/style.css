@@ -1,0 +1,442 @@
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+      padding-top: 120px;
+    }
+    a { text-decoration: none; }
+
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:20px 60px;
+
+    }
+
+    .tela1 {
+      background: #f0ede4;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .tela1 img {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .tela1 .texto {
+      max-width: 600px;
+      color: #023e3a;
+    }
+
+    .tela1 h1 {
+      font-size: 2.1rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #9b9e84;
+    }
+
+    .tela1 p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color:#1e1f1e
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      background-color: #9b9e84;
+      color: #fff;
+      border-radius: 50px;
+      transition: background 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #868970;
+    }
+
+
+    .tela2 {
+  background-color: #f0ede4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 80vh;
+}
+
+.tela2 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.tela2 img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.tela2 .texto {
+  max-width: 600px;
+  color: #1e1f1e;
+}
+
+.tela2 h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+  color:#9b9e84;
+}
+
+.tela2 ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.tela2 ul li {
+  font-size: 1.1rem;
+  color: #1e1f1e;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 28px;
+}
+
+.tela2 ul li::before {
+  content: '\2714';
+  position: absolute;
+  left: 0;
+  color: #9b9e84;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+    @media (max-width: 768px) {
+      .tela1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .tela1 .texto {
+        max-width: 100%;
+      }
+
+      .tela1 h1 {
+        font-size: 1.8rem;
+      }
+
+      .tela1 p {
+        font-size: 1rem;
+      }
+
+      .botao {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .tela2 .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tela2 .texto {
+    max-width: 100%;
+  }
+
+  .tela2 h1 {
+    font-size: 1.6rem;
+  }
+
+  .tela2 ul li {
+    font-size: 1rem;
+  }
+
+  .botao {
+    width: 100%;
+  }
+}
+
+.tela3 {
+  background-color: #f0ede4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tela3 .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tela3 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #9b9e84;
+}
+
+.tela3 img {
+  width: 70%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.tela3 .botao {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #9b9e84;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.tela3 .botao:hover {
+  background-color: #868970;
+}
+
+@media (max-width: 768px) {
+  .tela3 h1 {
+    font-size: 1.6rem;
+  }
+
+  .tela3 img {
+    width: 90%;
+    aspect-ratio: auto;
+  }
+
+  .tela3 .botao {
+    width: auto;
+  }
+}
+
+.tela4 {
+  background-color: #f0ede4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tela4 .container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.tela4 h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #9b9e84;
+}
+
+.tela4 .resumo {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.tela4 .resumo li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #1e1f1e;
+}
+
+.carrossel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  animation: slide 20s infinite linear;
+}
+
+.slides img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Botão Saiba Mais */
+.tela4 .botao {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #9b9e84;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.tela4 .botao:hover {
+  background-color: #868970;
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tela5 {
+  position: relative;
+  background-image: url('qualityhairfundoescuro.jpg'); /* Foto da clínica */
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela5 .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* sobreposição escura */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela5 .container {
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.tela5 h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.tela5 p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.botoes-mapa {
+  margin-top: 20px;
+}
+
+.botoes-mapa .botao {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #9b9e84;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.botoes-mapa .botao:hover {
+  background-color: #868970;
+}
+
+@media (max-width: 768px) {
+  .tela5 h1 {
+    font-size: 1.6rem;
+  }
+  .botoes-mapa .botao {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+
+.tela6 {
+  background-color: #f0ede4;
+  padding: 60px 20px;
+}
+
+.tela6 .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.tela6 h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 15px;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: rgba(155, 158, 132, 0.1);
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 15px 15px;
+  font-size: 1rem;
+  color: #1e1f1e;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #1e1f1e;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: #9b9e84;
+}
+
+.faq-question.active::after {
+  content: '-';
+}
